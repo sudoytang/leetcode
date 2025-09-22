@@ -28,3 +28,17 @@ pub mod q31;
 // 20250915
 pub mod q1935;
 pub mod q46;
+
+// 20250916
+pub mod q2349;
+
+// 20250917
+pub mod q42;
+
+// 20250919
+pub mod q407;
+pub mod q3484;
+
+
+// 20250922
+pub mod q238;
