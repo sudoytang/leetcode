@@ -57,3 +57,7 @@ pub mod q94;
 
 // 20251001
 pub mod q1518;
+pub mod q56;
+
+// 20251002
+pub mod q2;
