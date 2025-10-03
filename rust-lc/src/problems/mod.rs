@@ -61,3 +61,8 @@ pub mod q56;
 
 // 20251002
 pub mod q2;
+
+// 20251003
+pub mod q70;
+pub mod q118;
+pub mod q287;

@@ -1,7 +1,9 @@
+#[allow(unused)]
 struct Spreadsheet {
     cells: Vec<[i32; 26]>,
 }
 
+#[allow(unused)]
 enum Expr {
     Num(i32),
     CellRef(usize, usize),
@@ -11,6 +13,7 @@ enum Expr {
  * `&self` means the method takes an immutable reference.
  * If you need a mutable reference, change it to `&mut self` instead.
  */
+#[allow(unused)]
 impl Spreadsheet {
 
     fn parse_idx(expr: &str) -> Expr {
@@ -63,4 +66,5 @@ impl Spreadsheet {
  * let ret_3: i32 = obj.get_value(formula);
  */
 
+#[allow(unused)]
 struct PH;

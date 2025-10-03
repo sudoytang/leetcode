@@ -1,5 +1,6 @@
-use core::num;
 use std::collections::{BTreeSet, HashMap};
+
+#[allow(unused)]
 
 struct NumberContainers {
     container: HashMap<i32, i32>,
@@ -11,6 +12,7 @@ struct NumberContainers {
  * `&self` means the method takes an immutable reference.
  * If you need a mutable reference, change it to `&mut self` instead.
  */
+#[allow(unused)]
 impl NumberContainers {
 
     fn new() -> Self {
@@ -49,4 +51,5 @@ impl NumberContainers {
  * obj.change(index, number);
  * let ret_2: i32 = obj.find(number);
  */
+#[allow(unused)]
 struct PlaceHolder;

@@ -1,3 +1,4 @@
+#[allow(unused)]
 struct MinStack {
     stk: Vec<i32>,
     min_stk: Vec<(usize, i32)>,
@@ -8,6 +9,7 @@ struct MinStack {
  * `&self` means the method takes an immutable reference.
  * If you need a mutable reference, change it to `&mut self` instead.
  */
+#[allow(unused)]
 impl MinStack {
 
     fn new() -> Self {
@@ -55,4 +57,6 @@ impl MinStack {
  * let ret_3: i32 = obj.top();
  * let ret_4: i32 = obj.get_min();
  */
+#[allow(unused)]
+
 struct PH;
