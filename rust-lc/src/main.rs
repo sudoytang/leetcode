@@ -1,10 +1,10 @@
-use crate::problems::q1488;
+use crate::problems::{q394};
 
 pub mod problems;
 pub mod treenode;
 pub mod listnode;
 
 fn main() {
-    let _res = q1488::Solution::avoid_flood([1, 0, 2, 3, 0, 1, 2].into());
-    println!("{_res:?}");
+    let res = q394::Solution::decode_string("3[a2[c]]".into());
+    println!("{res}");
 }
