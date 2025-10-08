@@ -13,4 +13,10 @@ impl ListNode {
       val
     }
   }
+  pub fn new_with(val: i32, next: ListNode) -> Self {
+    Self {
+      val,
+      next: Some(Box::new(next)),
+    }
+  }
 }

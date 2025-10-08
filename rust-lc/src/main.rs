@@ -1,10 +1,11 @@
-use crate::problems::{q394};
+use crate::problems::{q234};
 
 pub mod problems;
 pub mod treenode;
 pub mod listnode;
-
+use listnode::ListNode;
 fn main() {
-    let res = q394::Solution::decode_string("3[a2[c]]".into());
+    let head = Some(Box::new(ListNode::new_with(1, ListNode::new_with(0, ListNode::new(1)))));
+    let res = q234::Solution::is_palindrome(head);
     println!("{res}");
 }
