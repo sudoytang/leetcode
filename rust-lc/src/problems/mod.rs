@@ -100,3 +100,7 @@ pub mod q230;
 pub mod q199;
 pub mod q114;
 pub mod q105;
+
+// 20251010
+pub mod q739;
+pub mod q73;
