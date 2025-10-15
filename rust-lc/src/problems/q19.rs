@@ -17,9 +17,8 @@
 
 
 use crate::listnode::ListNode;
-#[allow(unused)]
-pub struct Solution;
-#[allow(unused)]
+use super::Solution;
+
 impl Solution {
     pub fn remove_nth_from_end(mut head: Option<Box<ListNode>>, n: i32) -> Option<Box<ListNode>> {
         // if we use safe Rust, it's not even possible to finish in single scan, which requires an immutable borrow and a mutable borrow.
@@ -39,7 +38,7 @@ impl Solution {
         let taken = mutp.take();
         match taken {
             Some(n) => {
-                std::mem::replace(mutp, n.next);
+                *mutp = n.next;
             }
             None => {}
         }

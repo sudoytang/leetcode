@@ -1,8 +1,4 @@
-
-#[allow(unused)]
-pub struct Solution;
-
-#[allow(unused)]
+use super::Solution;
 impl Solution {
     pub fn length_of_longest_substring(s: String) -> i32 {
         use std::collections::HashSet;

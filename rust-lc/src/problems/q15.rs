@@ -1,12 +1,10 @@
 use std::collections::HashSet;
 
-#[allow(unused)]
-pub struct Solution;
+use super::Solution;
 
-#[allow(unused)]
 impl Solution {
 
-    pub fn two_sum(nums: &[i32], target: i32) -> HashSet<(i32, i32)> {
+    pub fn two_sum_q15(nums: &[i32], target: i32) -> HashSet<(i32, i32)> {
         let mut map = HashSet::new();
         let mut res = HashSet::new();
         for &num in nums {
@@ -20,7 +18,7 @@ impl Solution {
     pub fn three_sum_1(nums: Vec<i32>) -> Vec<Vec<i32>> {
         let mut res = HashSet::new();
         for (i, x) in nums.iter().copied().enumerate() {
-            for (min, max) in Self::two_sum(&nums[i+1..], -x) {
+            for (min, max) in Self::two_sum_q15(&nums[i+1..], -x) {
                 let r1 = i32::min(x, min);
                 let r3 = i32::max(x, max);
                 let r2 = if r1 == x { min } else if r3 == x { max } else { x };
