@@ -130,3 +130,10 @@ pub mod q35;
 pub mod q121;
 pub mod q55;
 pub mod q45;
+
+// 20251022
+pub mod q74;
+pub mod q34;
+pub mod q33;
+pub mod q153;
+pub mod q763;
