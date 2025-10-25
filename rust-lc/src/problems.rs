@@ -137,3 +137,7 @@ pub mod q34;
 pub mod q33;
 pub mod q153;
 pub mod q763;
+
+// 20251024
+pub mod q1716;
+pub mod q1024;
