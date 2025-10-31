@@ -141,3 +141,13 @@ pub mod q763;
 // 20251024
 pub mod q1716;
 pub mod q1024;
+
+// 20251027
+pub mod q198;
+pub mod q279;
+
+// 20251029
+pub mod q1526;
+
+// 20251031
+pub mod q3217;
