@@ -1,6 +1,6 @@
 
 #[allow(unused)]
-struct Solution;
+pub struct Solution;
 use std::collections::HashSet;
 
 #[allow(unused)]

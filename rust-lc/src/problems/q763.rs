@@ -1,4 +1,8 @@
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 
 enum MergeRange {
     DisJoint((usize, usize)),
@@ -58,7 +62,7 @@ impl Solution {
 
 #[cfg(test)]
 mod test {
-    use crate::problems::Solution;
+    use super::Solution;
 
     #[test]
     fn test_partition_labels_eg0() {

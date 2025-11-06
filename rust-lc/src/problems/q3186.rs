@@ -3,7 +3,11 @@ use std::collections::BTreeMap;
 // almost the same as q740;
 
 
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 impl Solution {
     pub fn maximum_total_damage(power: Vec<i32>) -> i64 {
 
@@ -37,7 +41,7 @@ impl Solution {
 
 #[cfg(test)]
 mod test {
-    use crate::problems::Solution;
+    use super::Solution;
 
     #[test]
     fn test_q3186_basic() {

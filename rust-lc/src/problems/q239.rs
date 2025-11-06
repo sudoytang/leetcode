@@ -1,6 +1,10 @@
 use std::collections::VecDeque;
 
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 
 impl Solution {
     pub fn max_sliding_window(nums: Vec<i32>, k: i32) -> Vec<i32> {

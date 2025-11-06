@@ -1,7 +1,11 @@
 
 use std::rc::Rc;
 use std::cell::RefCell;
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 use crate::TreeNode;
 impl Solution {
     fn is_inv_eq(left: &Option<Rc<RefCell<TreeNode>>>, right: &Option<Rc<RefCell<TreeNode>>>) -> bool {

@@ -1,5 +1,5 @@
 #[allow(unused)]
-struct Solution;
+pub struct Solution;
 #[allow(unused)]
 impl Solution {
     pub fn merge(mut intervals: Vec<Vec<i32>>) -> Vec<Vec<i32>> {

@@ -1,4 +1,7 @@
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
 
 #[derive(PartialEq, Eq)]
 enum State {
@@ -7,6 +10,7 @@ enum State {
     SecondEx(usize),    // the whole sequence is increasing
 }
 
+#[allow(unused)]
 
 impl Solution {
     pub fn has_increasing_subarrays(nums: Vec<i32>, k: i32) -> bool {

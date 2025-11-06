@@ -1,4 +1,8 @@
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 
 impl Solution {
 

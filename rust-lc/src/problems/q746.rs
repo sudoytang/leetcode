@@ -1,4 +1,15 @@
-use crate::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[cfg(feature = "local")]
+#[allow(unused)]
+use crate::ListNode;
+
+#[cfg(feature = "local")]
+#[allow(unused)]
+use crate::TreeNode;
+
 
 impl Solution {
     pub fn min_cost_climbing_stairs(cost: Vec<i32>) -> i32 {

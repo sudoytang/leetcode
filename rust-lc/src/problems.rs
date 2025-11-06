@@ -1,5 +1,3 @@
-pub struct Solution;
-
 // 20250908
 pub mod q1;
 pub mod q49;
@@ -164,3 +162,6 @@ pub mod q1137;
 pub mod q746;
 pub mod q740;
 pub mod q3186;
+
+// 20251105
+pub mod q3607;

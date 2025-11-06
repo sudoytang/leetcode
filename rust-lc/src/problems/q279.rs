@@ -1,4 +1,7 @@
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
 
 
 struct Memo {

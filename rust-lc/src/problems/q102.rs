@@ -1,5 +1,9 @@
 use crate::TreeNode;
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 use std::rc::Rc;
 use std::cell::RefCell;
 

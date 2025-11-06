@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 #[allow(unused)]
-struct Solution;
+pub struct Solution;
 #[allow(unused)]
 impl Solution {
     pub fn subarray_sum(mut nums: Vec<i32>, k: i32) -> i32 {

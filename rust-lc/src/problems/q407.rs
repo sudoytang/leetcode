@@ -1,5 +1,5 @@
 #[allow(unused)]
-struct Solution;
+pub struct Solution;
 #[allow(unused)]
 impl Solution {
     pub fn trap_rain_water(mut height_map: Vec<Vec<i32>>) -> i32 {

@@ -1,4 +1,16 @@
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
+
+impl Solution {
+    pub fn path_sum(root: Option<Rc<RefCell<TreeNode>>>, target_sum: i32) -> i32 {
+        let mut memo = Memo::new();
+        memo.dfs(&root, target_sum as i64, 0) as i32
+    }
+}
+
 use crate::TreeNode;
 
 use std::collections::HashMap;
@@ -39,12 +51,5 @@ impl Memo {
         // if this is not the leaf node, we will add counting for sub nodes.
         *self.presum_count.entry(presum).or_default() -= 1;
         path_cnt
-    }
-}
-
-impl Solution {
-    pub fn path_sum(root: Option<Rc<RefCell<TreeNode>>>, target_sum: i32) -> i32 {
-        let mut memo = Memo::new();
-        memo.dfs(&root, target_sum as i64, 0) as i32
     }
 }

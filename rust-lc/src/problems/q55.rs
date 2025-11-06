@@ -1,4 +1,8 @@
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 
 impl Solution {
     pub fn can_jump(nums: Vec<i32>) -> bool {
@@ -23,7 +27,7 @@ impl Solution {
 
 #[cfg(test)]
 mod test {
-    use crate::problems::Solution;
+    use super::Solution;
 
     #[test]
     fn test_q55_ok() {

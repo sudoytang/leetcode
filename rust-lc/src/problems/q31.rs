@@ -1,6 +1,6 @@
 
 #[allow(unused)]
-struct Solution;
+pub struct Solution;
 #[allow(unused)]
 impl Solution {
     pub fn next_permutation(nums: &mut Vec<i32>) {

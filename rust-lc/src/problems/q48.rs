@@ -1,4 +1,8 @@
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 
 impl Solution {
     unsafe fn swap_4(v1: *mut i32, v2: *mut i32, v3: *mut i32, v4: *mut i32) {

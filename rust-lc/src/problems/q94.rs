@@ -2,7 +2,7 @@ use crate::treenode::TreeNode;
 use std::rc::Rc;
 use std::cell::RefCell;
 #[allow(unused)]
-struct Solution;
+pub struct Solution;
 #[allow(unused)]
 
 impl Solution {

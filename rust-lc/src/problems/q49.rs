@@ -1,6 +1,6 @@
 
 #[allow(unused)]
-struct Solution;
+pub struct Solution;
 #[allow(unused)]
 impl Solution {
     fn count_freq(s: &str) -> [usize; 26] {

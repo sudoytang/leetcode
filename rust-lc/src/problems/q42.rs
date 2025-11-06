@@ -10,7 +10,7 @@ where T: Debug,
 
 
 #[allow(unused)]
-struct Solution;
+pub struct Solution;
 #[allow(unused)]
 impl Solution {
     fn trap_dp(height: Vec<i32>) -> i32 {

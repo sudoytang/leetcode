@@ -2,7 +2,7 @@ use std::ops::Index;
 
 
 #[allow(unused)]
-struct Solution;
+pub struct Solution;
 
 struct FlattenMat<'v> {
     vec: &'v Vec<Vec<i32>>,

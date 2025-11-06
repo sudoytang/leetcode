@@ -1,18 +1,10 @@
 pub mod problems;
 pub mod treenode;
 pub mod listnode;
+pub mod template;
 #[allow(unused)]
 use listnode::ListNode;
+#[allow(unused)]
 use treenode::TreeNode;
-use crate::problems::Solution;
 fn main() {
-    let mut v = vec![
-        vec![0, 1, 2, 0],
-        vec![3, 4, 5, 2],
-        vec![1, 3, 1, 5]
-    ];
-
-    Solution::set_zeroes(&mut v);
-    println!("{:#?}", v);
-
 }

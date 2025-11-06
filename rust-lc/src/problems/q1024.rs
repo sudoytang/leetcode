@@ -1,4 +1,8 @@
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 
 impl Solution {
     pub fn video_stitching(clips: Vec<Vec<i32>>, time: i32) -> i32 {
@@ -42,7 +46,7 @@ impl Solution {
 
 #[cfg(test)]
 mod test {
-    use crate::problems::Solution;
+    use super::Solution;
 
     #[test]
     fn test_1() {

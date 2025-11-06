@@ -2,7 +2,11 @@
 use std::rc::Rc;
 use std::cell::RefCell;
 use crate::TreeNode;
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 impl Solution {
     pub fn compute(root: &Option<Rc<RefCell<TreeNode>>>) -> (usize/* max_height */, usize/* diameter */) {
         match root {

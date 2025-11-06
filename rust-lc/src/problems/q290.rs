@@ -1,6 +1,10 @@
 use std::collections::HashMap;
 
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 impl Solution {
     pub fn word_pattern(pattern: String, s: String) -> bool {
         let it1 = pattern.chars();

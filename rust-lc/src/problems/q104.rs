@@ -19,7 +19,11 @@
 use std::rc::Rc;
 use std::cell::RefCell;
 use crate::treenode::TreeNode;
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 impl Solution {
     pub fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         match root {

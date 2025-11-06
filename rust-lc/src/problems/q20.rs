@@ -1,5 +1,5 @@
 #[allow(unused)]
-struct Solution;
+pub struct Solution;
 #[allow(unused)]
 impl Solution {
     pub fn is_valid(s: String) -> bool {

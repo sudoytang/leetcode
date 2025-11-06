@@ -1,5 +1,5 @@
 #[allow(unused)]
-struct Solution;
+pub struct Solution;
 #[allow(unused)]
 impl Solution {
     pub fn product_except_self(mut nums: Vec<i32>) -> Vec<i32> {

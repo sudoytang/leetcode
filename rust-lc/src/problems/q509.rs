@@ -1,4 +1,14 @@
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
+impl Solution {
+    pub fn fib(n: i32) -> i32 {
+        let mut memo : Memo = Default::default();
+        memo.fib(n as usize)
+    }
+}
 
 #[derive(Default)]
 struct Memo {
@@ -25,9 +35,3 @@ impl Memo {
 }
 
 
-impl Solution {
-    pub fn fib(n: i32) -> i32 {
-        let mut memo : Memo = Default::default();
-        memo.fib(n as usize)
-    }
-}

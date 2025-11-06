@@ -1,4 +1,8 @@
-use super::Solution;
+#[cfg(feature = "local")]
+#[allow(unused)]
+pub struct Solution;
+
+#[allow(unused)]
 impl Solution {
     pub fn find_min(nums: Vec<i32>) -> i32 {
         let pivot = nums[nums.len() - 1];
