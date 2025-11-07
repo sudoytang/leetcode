@@ -27,7 +27,7 @@ pub mod q31;
 
 // 20250915
 pub mod q1935;
-pub mod q46;
+// pub mod q46;  // <- this was not finished that day, there was a bug
 
 // 20250916
 pub mod q2349;
@@ -165,5 +165,14 @@ pub mod q3186;
 
 // 20251105
 pub mod q3607;
+
+// 20251106
 pub mod q208;
 pub mod q322;
+
+// 20251107
+pub mod q46;
+pub mod q78;
+pub mod q17;
+pub mod q22;
+pub mod q79;
