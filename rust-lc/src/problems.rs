@@ -198,3 +198,11 @@ pub mod q32;
 
 // 20251204
 pub mod q2211;
+
+// 20260124
+pub mod q1984;
+pub mod q1877;
+pub mod c486q1;
+pub mod c486q2;
+pub mod c486q3;
+pub mod c486q4;
